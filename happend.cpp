@@ -40,7 +40,12 @@
 #include <cmath>
 #include <sstream> 
 
-const char* fn = "C:\\Users\\xck\\Desktop\\TIME\\daily";
+const char* fn = "C:\\Users\\qaz123\\Desktop\\xck\\tools\\TIME\\daily";
+
+void MaximizeConsole() {//最大化 
+    HWND hwnd = GetForegroundWindow();
+    ShowWindow(hwnd, SW_MAXIMIZE);
+}
 
 struct eventtime{
 	int year,month,day,num;
@@ -233,6 +238,7 @@ int daojishi(int f_day,int f_momth,int f_year,int s_day,int s_momth,int s_year){
 
 int main() {
 	Sleep(1000);
+	std::cout<<"欢迎: HatsuneMikuIsMyWife@061031xck"<<std::endl;
 //初始化 
 	for(int i = 0;i < 500;i++){
 		et[i].year = -2;
@@ -241,10 +247,8 @@ int main() {
 		et[i].num = -2;
 	}
 	//窗口最大化 
-	HWND hwnd = GetConsoleWindow();
-    ShowWindow(hwnd, SW_MAXIMIZE);
+    //MaximizeConsole();
 //显示miku,系统时间 
-	printf("SYSTEM INITIALIZATION READY\n");
 	printf("             *#^##^*                                                                                 \n"); 
 	printf("            *########*                                                                               \n"); 
 	printf("           #### ! <)##                                                                               \n"); 
@@ -256,7 +260,7 @@ int main() {
 	printf("     *####   ##I #######  #####               / /|| || ||     |________|       ________        / /   \n"); 
 	printf("    *#%###   ##;  :#####:   ##$##            /_/||  || ||     |______| |      |______  |      / /    \n"); 
 	printf("   *#####   /##   ($=[]=$)   ######             ||  || ||     |________|             | |     / /     \n"); 
-	printf("  /*##$#*   ###  /%$&###&$%    ###$##           H A T S U N E    M I K U with 项宸恺 |_|    /_/      \n"); 
+	printf("  /*##$#*   ###  /%$&###&$%    ###$##         H A T S U N E  M I K U 16p with 项宸恺 |_|    /_/      \n"); 
 	printf("  #####/   *### /%$########$%   ######                                                               \n"); 
 	printf(" *#####   /####/%$##########$%  *###$##                                                              \n"); 
 	printf("*######   ##### %#############%  *#####                                                              \n"); 
